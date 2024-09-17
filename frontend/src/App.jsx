@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
-import React from 'react';
+import React from 'react'
 
 import Jobs from './components/Jobs'
 import Home from './components/Home'
