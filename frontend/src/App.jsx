@@ -1,5 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
+import React from 'react';
+
 import Jobs from './components/Jobs'
 import Home from './components/Home'
 import JobDescription from './components/JobDescription'
@@ -41,33 +43,33 @@ const appRouter = createBrowserRouter([
     element: <Singup />
   },
   {
-    path:"/profile",
-    element: <Profile/>
+    path: "/profile",
+    element: <Profile />
   },
   // Admin Dashboard Route Started
   {
-    path:"/admin/jobs",
-    element:<ProtectedRoute><PostJob/></ProtectedRoute> 
+    path: "/admin/jobs",
+    element: <ProtectedRoute><PostJob /></ProtectedRoute>
   },
   {
-    path:"/admin/jobs/create",
-    element:<ProtectedRoute><CreateJobs/></ProtectedRoute> 
+    path: "/admin/jobs/create",
+    element: <ProtectedRoute><CreateJobs /></ProtectedRoute>
   },
   {
-    path:"/admin/jobs/:id/applicants",
-    element:<ProtectedRoute><Applicants/></ProtectedRoute> 
+    path: "/admin/jobs/:id/applicants",
+    element: <ProtectedRoute><Applicants /></ProtectedRoute>
   },
   {
-    path:"/admin/companies",
-    element:<ProtectedRoute><Companies/></ProtectedRoute>
+    path: "/admin/companies",
+    element: <ProtectedRoute><Companies /></ProtectedRoute>
   },
   {
-    path:"/admin/companies/create",
-    element:<ProtectedRoute><CompanyCreate/></ProtectedRoute> 
+    path: "/admin/companies/create",
+    element: <ProtectedRoute><CompanyCreate /></ProtectedRoute>
   },
   {
-    path:"/admin/companies/:id",
-    element:<ProtectedRoute><CompanySetup/></ProtectedRoute> 
+    path: "/admin/companies/:id",
+    element: <ProtectedRoute><CompanySetup /></ProtectedRoute>
   },
 ])
 
